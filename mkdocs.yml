@@ -1,0 +1,60 @@
+
+site_name: WM Internal API Documentation
+repo_url: https://github.wm.com/esb/internal-api-docs
+repo_name: 'GitHub'
+site_description: 'Documentation for the WM Internal ESB API Documentation'
+site_author: 'WM ESB Team'
+site_favicon: 'images/favicon.ico'
+copyright: '©2016 Waste Management - Proprietary and Confidential'
+remote_branch: gh-pages
+remote_name: gh-pages
+
+pages:
+- Home: 'index.md'
+- Rest APIs:
+   - EventHub:
+       - Service Event Summary: 'Service Event Summary.md'
+   - Emails:
+       - cleanse: 'cleanse1.md'
+   - Contact:
+     - Contacts:
+       - GET: 'Contactb.md'
+       - POST: 'Contactp.md'
+     - Contact Billing : 'Contactbilling.md'
+     - Contacts Services: 'Contactservices.md'
+   - Customers:
+     - balance: 'balance.md'
+     - Search: 'Search.md'
+     - Profiles: 'profiles.md'
+     - Tickets: 'tickets.md'
+     - Services:
+       - Services: 'Services.md'
+       - Services Exception: 'Services exception.md'
+     - Invoice:
+       - Invoice Summary: 'InvoiceS.md'
+       - Invoice Details: 'InvoiceD.md'
+   - Libraries:
+     -  bill cycle code: 'bill cycle code.md'
+     -  municipalities: 'municipalities.md'
+   - Vehicles:
+     - GPS details: 'GPS.md'
+- Soap APIs:
+   - Geocode: 'Geocode.md'
+   - getANIMatch: 'getANIMatch.md'
+   - getZoneInfo: 'getZoneInfo.md'
+   - getCustomerETA: 'getCustomerETA.md'
+   - Get Customer Profile Info: 'GetCustomerProfileInfo.md'
+- Help: 'help.md'
+
+
+theme: spacelab
+
+markdown_extensions:
+    - toc:
+        permalink: True
+        separator: "-"
+extra:
+    version: 0.0.1
+
+extra_css:
+    - css/extra.css
